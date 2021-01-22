@@ -11,18 +11,6 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-/* Utility */
-
-.btn {
-  text-align: center;
-  background: red;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin-top: 25px;
-  width: 50%;
-  max-width: 200px;
-}
-
 /* Styling */
 
 #main {
@@ -76,4 +64,70 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
   font-size: 2rem;
   color: white;
+}
+
+#showprojects {
+  background: black;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 10px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#showprojects:hover {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 10px;
+  border: 1.5px solid black;
+}
+
+/* Projekte */
+
+#Projects {
+  height: 50vh;
+  text-align: center;
+}
+
+#Projects h1 {
+  color: black;
+  padding: 50px;
+}
+
+.content {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .project {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.img_wrapper img {
+  width: 100%;
+  height: 400px;
+}
+
+.contentwrapper {
+  position: absolute;
+  padding: 50px 50px;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background: #00370d;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.contentwrapper:hover {
+  opacity: 1;
 }
