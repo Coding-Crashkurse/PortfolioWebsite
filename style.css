@@ -9,6 +9,7 @@
 body,
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Styling */
@@ -25,7 +26,8 @@ html {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
+  z-index: 99999;
   top: 0;
   width: 100%;
   display: flex;
@@ -34,6 +36,7 @@ nav {
   padding: 10px 25px;
   color: white;
   font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav ul {
@@ -78,12 +81,21 @@ nav ul li a:hover {
 }
 
 #showprojects:hover {
-  background: white;
   color: black;
+  background: white;
   padding: 10px 20px;
   text-align: center;
   margin-top: 10px;
   border: 1.5px solid black;
+}
+
+#showprojects:hover a {
+  color: black;
+}
+
+#showprojects a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Projekte */
@@ -177,6 +189,7 @@ input[type="submit"] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -216,4 +229,34 @@ input[type="submit"]:hover {
 .fab {
   font-size: 22px;
   cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  #projects .content {
+    flex-direction: column;
+    height: 1300px;
+  }
+
+  .contact_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  #showprojects {
+    font-size: 22px;
+    min-width: 350px;
+  }
+
+  #nav {
+    flex-direction: column;
+  }
+
+  #nav ul {
+    margin-top: 25px;
+  }
+
+  #love {
+    display: none;
+  }
 }
