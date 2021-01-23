@@ -88,12 +88,14 @@ nav ul li a:hover {
 
 /* Projekte */
 
-#Projects {
-  height: 50vh;
+#projects,
+#kontakt {
+  min-height: 600px;
   text-align: center;
 }
 
-#Projects h1 {
+#projects .header,
+#kontakt .header {
   color: black;
   padding: 50px;
 }
@@ -130,4 +132,88 @@ nav ul li a:hover {
 
 .contentwrapper:hover {
   opacity: 1;
+}
+
+/* Kontakt */
+
+#kontakt {
+  background: #00370d;
+  color: white;
+}
+
+#kontakt .header {
+  color: white;
+}
+
+.contact_wrapper {
+  display: flex;
+}
+
+.contact_wrapper .contact {
+  flex: 1;
+}
+
+.contact_wrapper .contact img {
+  width: 100%;
+  height: 400px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #00370d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #00370d;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  height: 400px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#footer {
+  background: black;
+  height: 70px;
+  padding: 0 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .footer_content {
+  color: white;
+}
+
+#socials {
+  display: flex;
+}
+
+#footer .wrapper {
+  padding: 10px 10px;
+}
+
+.fab {
+  font-size: 22px;
+  cursor: pointer;
 }

@@ -15,9 +15,9 @@
                 <h3>John Doe - Web Developer</h3>
             </div>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Projects">Projekte</a></li>
-                <li><a href="#About">Über mich</a></li>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
         <div id="navigate">
@@ -27,8 +27,8 @@
         </div>
     </header>
 
-    <section id="Projects">
-        <h1>Übersicht über die Projekte</h1>
+    <section id="projects">
+        <h1 class="header">Übersicht über die Projekte</h1>
         <div class="content">
             <div class="project">
                 <div class="img_wrapper">
@@ -58,9 +58,51 @@
     </section>
 
     <section id="kontakt">
-
+        <h1 class="header">Kontaktiere mich</h1>
+        <div class="contact_wrapper">
+            <div class="contact">
+                <img src="/images/contact.jpeg" alt="">
+            </div>
+            <div class="contact">
+                <div class="container">
+                    <form>
+                  
+                      <label for="fname">Vorname</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Vorname">
+                  
+                      <label for="lname">Nachname</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Nachname">
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Deine Nachricht" style="height:100px"></textarea>
+                  
+                      <input type="submit" value="Senden">
+                  
+                    </form>
+                  </div>
+            </div>
+        </div>
     </section>
 
+    <footer id="footer">
+        <div class="footer_content">
+            <p>Coded with love</p>
+        </div>
+        <div class="footer_content">
+            &copy; John Joe - 2020
+        </div>
+        <div class="footer_content" id="socials">
+            <div class="wrapper">
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="wrapper">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="wrapper">
+                <i class="fab fa-stack-overflow"></i>
+            </div>
+        </div>
+    </footer>
 
     
 </body>
